@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Expresiones">
+      <UniqueIdentifier>{f5b14038-32c2-4649-a6a9-123e0a82c37c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Expresiones\Relacional">
+      <UniqueIdentifier>{5d328f08-7098-4fab-a1d6-8cc8ff2faf6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sentencias">
+      <UniqueIdentifier>{747a8514-3536-4d74-8da6-aa79d6684f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Semantico">
+      <UniqueIdentifier>{51fa78ea-6cb2-403e-bafc-898542c03699}</UniqueIdentifier>
+      <Extensions>
+      </Extensions>
+    </Filter>
+    <Filter Include="Tipos">
+      <UniqueIdentifier>{3c4d8800-c8a9-4642-a930-fe7fbfbbe71c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interpretacion">
+      <UniqueIdentifier>{ea6f1f8c-9f96-4a7e-b869-50e354a28a67}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LectorArchivo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lexico.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Token.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LexicalException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sintactico.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SyntaxException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefNodosExpresion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefNodosSentencia.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Expresion.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="ExpresionUnaria.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="ExprMenorQue.h">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClInclude>
+    <ClInclude Include="ExprMayorQue.h">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClInclude>
+    <ClInclude Include="ExprIgualQue.h">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClInclude>
+    <ClInclude Include="ExprDistinto.h">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClInclude>
+    <ClInclude Include="ExprMayorIgual.h">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClInclude>
+    <ClInclude Include="ExprMenorIgual.h">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstanteEntera.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstanteLiteral.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstanteReal.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstanteString.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Qualifier.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Referencia.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Indexacion.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Identificador.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionCall.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AndBinario.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Division.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="ExprBinaria.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Modulo.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Multiplicacion.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Negacion.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="OrBinario.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Resta.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="RestaUnaria.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Suma.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="SumaUnaria.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="Clausula.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="ClausulaCase.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="Sentencia.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenciaAsignacion.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenciaCase.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenciaFor.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenciaIf.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenciaProcedimiento.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenciaRepeat.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenciaWhile.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="Tipo.h">
+      <Filter>Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="Entero.h">
+      <Filter>Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="DeclaracionVariable.h">
+      <Filter>Semantico</Filter>
+    </ClInclude>
+    <ClInclude Include="Caracter.h">
+      <Filter>Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="Cadena.h">
+      <Filter>Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="Arreglo.h">
+      <Filter>Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="LimitesRango.h">
+      <Filter>Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="SemanticException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InformacionSemantica.h">
+      <Filter>Semantico</Filter>
+    </ClInclude>
+    <ClInclude Include="Booleano.h">
+      <Filter>Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="Real.h">
+      <Filter>Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaVariables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Registro.h">
+      <Filter>Tipos</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstanteCaracter.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstanteBooleana.h">
+      <Filter>Expresiones</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaSentencias.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeclaracionFuncion.h">
+      <Filter>Semantico</Filter>
+    </ClInclude>
+    <ClInclude Include="Parametro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InformacionInterpretacion.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="Valor.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="ValorEntero.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="ValorCadena.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="ValorBooleano.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="ValorCaracter.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="ValorReal.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="ValorRegistro.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaValores.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Valores.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="ValorArreglo.h">
+      <Filter>Interpretacion</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenciaWrite.h">
+      <Filter>Sentencias</Filter>
+    </ClInclude>
+    <ClInclude Include="SentenciaRead.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LectorArchivo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lexico.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Token.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LexicalException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SyntaxException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExpresionUnaria.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="ExprMenorQue.cpp">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClCompile>
+    <ClCompile Include="ExprMayorQue.cpp">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClCompile>
+    <ClCompile Include="ExprIgualQue.cpp">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClCompile>
+    <ClCompile Include="ExprDistinto.cpp">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClCompile>
+    <ClCompile Include="ExprMayorIgual.cpp">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClCompile>
+    <ClCompile Include="ExprMenorIgual.cpp">
+      <Filter>Expresiones\Relacional</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstanteEntera.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstanteLiteral.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstanteReal.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstanteString.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Identificador.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Indexacion.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Referencia.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Qualifier.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionCall.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="AndBinario.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Division.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="ExprBinaria.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Modulo.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Multiplicacion.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Negacion.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="OrBinario.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Resta.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="RestaUnaria.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Suma.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="SumaUnaria.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="Sintactico.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Clausula.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="ClausulaCase.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="Sentencia.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenciaAsignacion.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenciaCase.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenciaFor.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenciaIf.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenciaProcedimiento.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenciaRepeat.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenciaWhile.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="Entero.cpp">
+      <Filter>Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="DeclaracionVariable.cpp">
+      <Filter>Semantico</Filter>
+    </ClCompile>
+    <ClCompile Include="Caracter.cpp">
+      <Filter>Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="Cadena.cpp">
+      <Filter>Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="Arreglo.cpp">
+      <Filter>Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="LimitesRango.cpp">
+      <Filter>Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="SemanticException.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InformacionSemantica.cpp">
+      <Filter>Semantico</Filter>
+    </ClCompile>
+    <ClCompile Include="Booleano.cpp">
+      <Filter>Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="Real.cpp">
+      <Filter>Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaVariables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Registro.cpp">
+      <Filter>Tipos</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstanteCaracter.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstanteBooleana.cpp">
+      <Filter>Expresiones</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaSentencias.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeclaracionFuncion.cpp">
+      <Filter>Semantico</Filter>
+    </ClCompile>
+    <ClCompile Include="Parametro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InformacionInterpretacion.cpp">
+      <Filter>Interpretacion</Filter>
+    </ClCompile>
+    <ClCompile Include="ValorEntero.cpp">
+      <Filter>Interpretacion</Filter>
+    </ClCompile>
+    <ClCompile Include="ValorCadena.cpp">
+      <Filter>Interpretacion</Filter>
+    </ClCompile>
+    <ClCompile Include="ValorBooleano.cpp">
+      <Filter>Interpretacion</Filter>
+    </ClCompile>
+    <ClCompile Include="ValorCaracter.cpp">
+      <Filter>Interpretacion</Filter>
+    </ClCompile>
+    <ClCompile Include="ValorReal.cpp">
+      <Filter>Interpretacion</Filter>
+    </ClCompile>
+    <ClCompile Include="ValorRegistro.cpp">
+      <Filter>Interpretacion</Filter>
+    </ClCompile>
+    <ClCompile Include="ListaValores.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ValorArreglo.cpp">
+      <Filter>Interpretacion</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenciaWrite.cpp">
+      <Filter>Sentencias</Filter>
+    </ClCompile>
+    <ClCompile Include="SentenciaRead.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CompiladorWebPascal.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

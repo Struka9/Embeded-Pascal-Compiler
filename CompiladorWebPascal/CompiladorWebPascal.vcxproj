@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F252F832-9923-4A06-B3B6-3FE5C9BFCFB8}</ProjectGuid>
+    <RootNamespace>CompiladorWebPascal</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AndBinario.h" />
+    <ClInclude Include="Arreglo.h" />
+    <ClInclude Include="Booleano.h" />
+    <ClInclude Include="Cadena.h" />
+    <ClInclude Include="Caracter.h" />
+    <ClInclude Include="Clausula.h" />
+    <ClInclude Include="ClausulaCase.h" />
+    <ClInclude Include="ConstanteBooleana.h" />
+    <ClInclude Include="ConstanteCaracter.h" />
+    <ClInclude Include="ConstanteEntera.h" />
+    <ClInclude Include="ConstanteLiteral.h" />
+    <ClInclude Include="ConstanteReal.h" />
+    <ClInclude Include="ConstanteString.h" />
+    <ClInclude Include="DeclaracionFuncion.h" />
+    <ClInclude Include="DeclaracionVariable.h" />
+    <ClInclude Include="DefNodosExpresion.h" />
+    <ClInclude Include="DefNodosSentencia.h" />
+    <ClInclude Include="Division.h" />
+    <ClInclude Include="Entero.h" />
+    <ClInclude Include="ExprDistinto.h" />
+    <ClInclude Include="Expresion.h" />
+    <ClInclude Include="ExpresionUnaria.h" />
+    <ClInclude Include="ExprIgualQue.h" />
+    <ClInclude Include="ExprMayorIgual.h" />
+    <ClInclude Include="ExprMayorQue.h" />
+    <ClInclude Include="ExprMenorIgual.h" />
+    <ClInclude Include="ExprMenorQue.h" />
+    <ClInclude Include="ExprBinaria.h" />
+    <ClInclude Include="InformacionInterpretacion.h" />
+    <ClInclude Include="ListaSentencias.h" />
+    <ClInclude Include="ListaValores.h" />
+    <ClInclude Include="ListaVariables.h" />
+    <ClInclude Include="Parametro.h" />
+    <ClInclude Include="Real.h" />
+    <ClInclude Include="FunctionCall.h" />
+    <ClInclude Include="Identificador.h" />
+    <ClInclude Include="Indexacion.h" />
+    <ClInclude Include="InformacionSemantica.h" />
+    <ClInclude Include="LectorArchivo.h" />
+    <ClInclude Include="LexicalException.h" />
+    <ClInclude Include="Lexico.h" />
+    <ClInclude Include="LimitesRango.h" />
+    <ClInclude Include="Modulo.h" />
+    <ClInclude Include="Multiplicacion.h" />
+    <ClInclude Include="Negacion.h" />
+    <ClInclude Include="OrBinario.h" />
+    <ClInclude Include="Qualifier.h" />
+    <ClInclude Include="Referencia.h" />
+    <ClInclude Include="Registro.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Resta.h" />
+    <ClInclude Include="RestaUnaria.h" />
+    <ClInclude Include="SemanticException.h" />
+    <ClInclude Include="Sentencia.h" />
+    <ClInclude Include="SentenciaAsignacion.h" />
+    <ClInclude Include="SentenciaCase.h" />
+    <ClInclude Include="SentenciaFor.h" />
+    <ClInclude Include="SentenciaIf.h" />
+    <ClInclude Include="SentenciaProcedimiento.h" />
+    <ClInclude Include="SentenciaRead.h" />
+    <ClInclude Include="SentenciaRepeat.h" />
+    <ClInclude Include="SentenciaWhile.h" />
+    <ClInclude Include="SentenciaWrite.h" />
+    <ClInclude Include="Sintactico.h" />
+    <ClInclude Include="Suma.h" />
+    <ClInclude Include="SumaUnaria.h" />
+    <ClInclude Include="SyntaxException.h" />
+    <ClInclude Include="Tipo.h" />
+    <ClInclude Include="Token.h" />
+    <ClInclude Include="Util.h" />
+    <ClInclude Include="Valor.h" />
+    <ClInclude Include="ValorArreglo.h" />
+    <ClInclude Include="ValorBooleano.h" />
+    <ClInclude Include="ValorCadena.h" />
+    <ClInclude Include="ValorCaracter.h" />
+    <ClInclude Include="ValorEntero.h" />
+    <ClInclude Include="Valores.h" />
+    <ClInclude Include="ValorReal.h" />
+    <ClInclude Include="ValorRegistro.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AndBinario.cpp" />
+    <ClCompile Include="Arreglo.cpp" />
+    <ClCompile Include="Booleano.cpp" />
+    <ClCompile Include="Cadena.cpp" />
+    <ClCompile Include="Caracter.cpp" />
+    <ClCompile Include="Clausula.cpp" />
+    <ClCompile Include="ClausulaCase.cpp" />
+    <ClCompile Include="ConstanteBooleana.cpp" />
+    <ClCompile Include="ConstanteCaracter.cpp" />
+    <ClCompile Include="ConstanteEntera.cpp" />
+    <ClCompile Include="ConstanteLiteral.cpp" />
+    <ClCompile Include="ConstanteReal.cpp" />
+    <ClCompile Include="ConstanteString.cpp" />
+    <ClCompile Include="DeclaracionFuncion.cpp" />
+    <ClCompile Include="DeclaracionVariable.cpp" />
+    <ClCompile Include="Division.cpp" />
+    <ClCompile Include="Entero.cpp" />
+    <ClCompile Include="ExprDistinto.cpp" />
+    <ClCompile Include="ExpresionUnaria.cpp" />
+    <ClCompile Include="ExprIgualQue.cpp" />
+    <ClCompile Include="ExprMayorIgual.cpp" />
+    <ClCompile Include="ExprMayorQue.cpp" />
+    <ClCompile Include="ExprMenorIgual.cpp" />
+    <ClCompile Include="ExprMenorQue.cpp" />
+    <ClCompile Include="ExprBinaria.cpp" />
+    <ClCompile Include="InformacionInterpretacion.cpp" />
+    <ClCompile Include="ListaSentencias.cpp" />
+    <ClCompile Include="ListaValores.cpp" />
+    <ClCompile Include="ListaVariables.cpp" />
+    <ClCompile Include="Parametro.cpp" />
+    <ClCompile Include="Real.cpp" />
+    <ClCompile Include="FunctionCall.cpp" />
+    <ClCompile Include="Identificador.cpp" />
+    <ClCompile Include="Indexacion.cpp" />
+    <ClCompile Include="InformacionSemantica.cpp" />
+    <ClCompile Include="LectorArchivo.cpp" />
+    <ClCompile Include="LexicalException.cpp" />
+    <ClCompile Include="Lexico.cpp" />
+    <ClCompile Include="LimitesRango.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Modulo.cpp" />
+    <ClCompile Include="Multiplicacion.cpp" />
+    <ClCompile Include="Negacion.cpp" />
+    <ClCompile Include="OrBinario.cpp" />
+    <ClCompile Include="Qualifier.cpp" />
+    <ClCompile Include="Referencia.cpp" />
+    <ClCompile Include="Registro.cpp" />
+    <ClCompile Include="Resta.cpp" />
+    <ClCompile Include="RestaUnaria.cpp" />
+    <ClCompile Include="SemanticException.cpp" />
+    <ClCompile Include="Sentencia.cpp" />
+    <ClCompile Include="SentenciaAsignacion.cpp" />
+    <ClCompile Include="SentenciaCase.cpp" />
+    <ClCompile Include="SentenciaFor.cpp" />
+    <ClCompile Include="SentenciaIf.cpp" />
+    <ClCompile Include="SentenciaProcedimiento.cpp" />
+    <ClCompile Include="SentenciaRead.cpp" />
+    <ClCompile Include="SentenciaRepeat.cpp" />
+    <ClCompile Include="SentenciaWhile.cpp" />
+    <ClCompile Include="SentenciaWrite.cpp" />
+    <ClCompile Include="Sintactico.cpp" />
+    <ClCompile Include="Suma.cpp" />
+    <ClCompile Include="SumaUnaria.cpp" />
+    <ClCompile Include="SyntaxException.cpp" />
+    <ClCompile Include="Token.cpp" />
+    <ClCompile Include="Util.cpp" />
+    <ClCompile Include="ValorArreglo.cpp" />
+    <ClCompile Include="ValorBooleano.cpp" />
+    <ClCompile Include="ValorCadena.cpp" />
+    <ClCompile Include="ValorCaracter.cpp" />
+    <ClCompile Include="ValorEntero.cpp" />
+    <ClCompile Include="ValorReal.cpp" />
+    <ClCompile Include="ValorRegistro.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CompiladorWebPascal.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

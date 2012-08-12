@@ -1,0 +1,8 @@
+#include "Valor.h"
+#include "ValorEntero.h"
+#include "ValorBooleano.h"
+#include "ValorCadena.h"
+#include "ValorCaracter.h"
+#include "ValorReal.h"
+#include "ValorRegistro.h"
+#include "ValorArreglo.h"

@@ -1,0 +1,12 @@
+#pragma once
+#include "Sentencia.h"
+#include "SentenciaWrite.h"
+#include "SentenciaRead.h"
+#include "SentenciaWhile.h"
+#include "SentenciaRepeat.h"
+#include "SentenciaIf.h"
+#include "SentenciaFor.h"
+#include "SentenciaProcedimiento.h"
+#include "SentenciaAsignacion.h"
+#include "SentenciaCase.h"
+#include "ListaSentencias.h"
